@@ -1,0 +1,58 @@
+<section id="tabs">
+    <div class="container-fluid">
+        <div class="row controls">
+            <div class="col-xs-3 control"
+                 ng-repeat="tab in tabs.tabsservice.tabs"
+                 ng-class="{active:tabs.isActiveTab(tab.url)}"
+                 ng-click="tabs.onClickTab(tab)">{{ tab.title }}</div>
+        </div>
+        <div class="row">
+            <div id="mainView" class="col-sm-12">
+                <div ng-include="tabs.currentTab"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/ng-template" id="one.tpl.html">
+    <div class="row tab-content">
+        <div class="col-sm-6 tab-graphic"></div>
+        <div class="col-sm-6 content">
+            <h2>Class aptent taciti sociosqu</h2>
+            <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi.</p>
+            <div class="row">
+                <img class="col-xs-12 col-sm-8" src="dist/img/pretty-images.png" />
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="two.tpl.html">
+    <div class="row tab-content">
+        <div class="col-sm-6 tab-graphic"></div>
+        <div class="col-sm-6 content">
+            <h2>Tab Two</h2>
+            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="three.tpl.html">
+    <div class="row tab-content">
+        <div class="col-sm-6 tab-graphic"></div>
+        <div class="col-sm-6 content">
+            <h2>Tab Three</h2>
+            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="four.tpl.html">
+    <div class="row tab-content">
+        <div class="col-sm-6 tab-graphic"></div>
+        <div class="col-sm-6 content">
+            <h2>Tab Four</h2>
+            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+        </div>
+    </div>
+</script>

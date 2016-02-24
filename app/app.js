@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('flexion', [
+angular.module('generico', [
         'ngRoute',
-        'flexion.test'
+        'generico.tabs'
     ])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/'});

@@ -1,0 +1,58 @@
+#tabs
+  color: black
+  text-align: center
+
+  .controls
+    .control
+      height: 80px
+      line-height: 80px
+      background: black
+      color: white
+      text-transform: uppercase
+      cursor: pointer
+      border-left: 1px solid #494949
+      font-size: .8em
+      font-weight: 600
+    .control:hover
+      background-color: #1b1b1b
+    .active, .active:hover
+      background-color: #00a5db
+    .active::after
+      margin: 0px auto
+      display: block
+      position: relative
+      content: ' '
+      background: url("img/tail.png") no-repeat center
+      width: 57px
+      height: 26px
+      z-index: 2
+    .control:first-child
+      border-left: 0px
+
+  .tab-content
+    color: #454545
+    .content
+      padding: 50px 80px 0
+    h2
+      font-weight: bold
+      text-align: left
+    p
+      font-size: .9em
+      text-align: left
+      margin: 20px 0
+    .tab-graphic
+      background: url("img/Bitmap.png") no-repeat center
+      background-size: cover
+      height: 418px
+    .tab-graphic::after
+      top: 130px
+      display: block
+      position: absolute
+      content: ' '
+      background: url("img/ico-circlestar.png") no-repeat center
+      width: 159px
+      height: 159px
+      z-index: 2
+      right: -80px
+
+

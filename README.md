@@ -1,7 +1,3 @@
-# Take-home Mini Project
-
-This is my submission for Flexion's front-end Mini Project. Have questions? Something doesn't look right? Shoot me a message at deanmono@gmail.com
-
 ## Dependencies
 
 All assets are pre-compiled for your viewing pleasure, however you will want to consider using these tools to get up and running with ease...
@@ -12,7 +8,7 @@ All assets are pre-compiled for your viewing pleasure, however you will want to 
 
 ## Installation
 
-- Clone the repo and then cd into the flexion project root directory.
+- Clone the repo and then cd into the project root directory.
 - NPM install all the dependencies 
 - Install Grunt CLI (npm install -g grunt-cli)
 - Serve (see below)
