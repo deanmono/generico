@@ -1,0 +1,205 @@
+/** CSS RESET **/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers, bless you */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** Begin App level styling **/
+body {
+  background: #fff;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.25em;
+  font-weight: bold;
+}
+p {
+  margin: 0 0 1.5em;
+}
+.text-center {
+  text-align: center;
+}
+header {
+  background: #fff;
+}
+header .logo {
+  background: url("img/generic-logo.png") no-repeat center;
+  width: 141px;
+  height: 42px;
+  margin: 11px 0;
+  display: block;
+  outline: none;
+}
+header .nav {
+  text-align: center;
+}
+header .nav a {
+  margin: 0px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  color: #444;
+  line-height: 64px;
+}
+#hero {
+  height: 494px;
+  background: url("img/hero.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+#hero .container {
+  position: relative;
+  top: 20%;
+}
+footer {
+  background-color: #00a5db;
+  min-height: 140px;
+}
+footer h2 {
+  margin-top: 34px;
+}
+footer p {
+  padding-top: 40px;
+}
+footer .social {
+  padding-top: 48px;
+  text-align: right;
+}
+footer .social a {
+  height: 41px;
+  width: 42px;
+  display: inline-block;
+}
+footer .social .facebook {
+  background: url("img/icons.png") 0px 0px no-repeat;
+}
+footer .social .twitter {
+  background: url("img/icons.png") -67px 0px no-repeat;
+}
+footer .social .linkedin {
+  background: url("img/icons.png") -131px 0px no-repeat;
+}
+footer .social .instragram {
+  background: url("img/icons.png") -197px 0px no-repeat;
+}
